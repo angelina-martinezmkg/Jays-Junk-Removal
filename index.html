@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Jay's Junk Removal | Junk Removal in Ferrum, VA | (571) 707-0586</title>
-  <meta name="description" content="Jay's Junk Removal offers junk, furniture, appliance, mattress, garage, yard waste, construction debris and property cleanout removal in Ferrum, Virginia. Request an appointment or call (571) 707-0586.">
+  <title>Jay's Junk Removal | Junk Removal &amp; Hauling in Ferrum &amp; Franklin County, VA</title>
+  <meta name="description" content="Jay's Junk Removal offers junk, furniture, appliance, mattress, garage, yard waste, construction debris, property cleanouts and moving help in Ferrum and Franklin County, Virginia. Licensed &amp; insured, open 7 days a week. Call (571) 707-0586.">
   <meta name="theme-color" content="#121314">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
@@ -20,10 +20,13 @@
     "@type": "LocalBusiness",
     "name": "Jay's Junk Removal",
     "telephone": "+1-571-707-0586",
-    "description": "Junk removal, furniture and appliance removal, mattress removal, garage cleanouts, yard waste, construction debris and property cleanouts in Ferrum, Virginia.",
+    "description": "Junk removal, furniture hauling, appliance removal, mattress disposal, garage cleanouts, yard waste, construction debris, property cleanouts and moving help in Ferrum and Franklin County, Virginia.",
+    "url": "https://jaysjunkremovalva.com",
     "image": "assets/images/og-image.jpg",
-    "address": { "@type": "PostalAddress", "addressLocality": "Ferrum", "addressRegion": "VA", "addressCountry": "US" },
-    "areaServed": { "@type": "Place", "name": "Ferrum, Virginia" }
+    "address": { "@type": "PostalAddress", "addressLocality": "Ferrum", "addressRegion": "VA", "postalCode": "24088", "addressCountry": "US" },
+    "geo": { "@type": "GeoCoordinates", "latitude": 36.9264151, "longitude": -80.0206413 },
+    "areaServed": [{ "@type": "AdministrativeArea", "name": "Franklin County, VA" }, { "@type": "Place", "name": "Ferrum, VA" }],
+    "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"] }
   }
   </script>
 
@@ -36,7 +39,8 @@
     (function (d) {
       var c = d.documentElement;
       c.className = c.className.replace('no-js', 'js');
-      if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) c.className += ' reduced';
+      var off = false; try { off = localStorage.getItem('jjr-motion') === 'off'; } catch (e) {}
+      if (off || (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)) c.className += ' reduced';
     })(document);
   </script>
 </head>
@@ -57,16 +61,6 @@
     <symbol id="i-steps" viewBox="0 0 24 24"><path d="M4 18h5v-5h5V8h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   </svg>
 
-  <!-- Preloader: a roll-up truck door -->
-  <div class="loader" aria-hidden="true">
-    <div class="loader__door">
-      <div class="loader__mark"><span>JAY'S</span><b>JUNK REMOVAL</b></div>
-      <div class="loader__count"><span>0</span>%</div>
-      <span class="loader__handle"></span>
-    </div>
-  </div>
-
-  <div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"></span></div>
   <div class="progress" aria-hidden="true"><span></span></div>
 
   <!-- Header -->
@@ -104,8 +98,11 @@
     <div class="mmenu__foot">
       <a href="#book" class="btn btn--lime"><svg><use href="#i-cal"/></svg><span>Book an Appointment</span></a>
       <a href="tel:+15717070586" class="btn btn--line"><svg><use href="#i-phone"/></svg><span>Call (571) 707-0586</span></a>
+      <button type="button" class="motion-toggle"><svg><use href="#i-steps"/></svg><span>Turn animations off</span></button>
     </div>
   </div>
+
+  <button type="button" class="totop" aria-label="Back to top"><svg><use href="#i-arrow"/></svg></button>
 
   <!-- Sticky mobile CTA -->
   <div class="mbar" aria-label="Quick actions">
@@ -118,19 +115,20 @@
     <!-- HERO -->
     <section class="hero" id="home" aria-labelledby="hero-title">
       <div class="hero__media">
-        <img src="assets/images/hero-pickup.webp" alt="A red pickup truck with its tailgate down, loaded and ready to haul, parked by a wooden fence in the countryside" width="2200" height="1467" fetchpriority="high">
+        <img src="assets/images/hero-pickup.webp" alt="A worker carrying a box out to a box truck parked at the curb" width="2200" height="1400" fetchpriority="high">
       </div>
       <div class="hero__shade"></div>
       <div class="hero__grain" aria-hidden="true"></div>
+      <div class="hero__bits" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><i class="b4"></i><i class="b1"></i><i class="b2"></i><i class="b3"></i><i class="b4"></i><i class="b1"></i><i class="b3"></i></div>
 
       <div class="hero__content wrap">
-        <p class="hero__tag"><span class="pulse"></span>Junk removal · Ferrum, Virginia</p>
+        <p class="hero__tag"><span class="pulse"></span>Junk removal &amp; hauling · Open 7 days a week</p>
         <h1 class="hero__title" id="hero-title" aria-label="Your junk. Gone.">
           <span class="hline hline--1" aria-hidden="true"><span class="ch">Y</span><span class="ch">o</span><span class="ch">u</span><span class="ch">r</span><span class="sp"> </span><span class="ch">j</span><span class="ch">u</span><span class="ch">n</span><span class="ch">k</span><span class="ch">.</span></span>
           <span class="hline hline--2" aria-hidden="true"><span class="gone"><span class="gone__txt">Gone.</span><span class="gone__bar"></span></span></span>
         </h1>
         <div class="hero__bottom">
-          <p class="hero__lead">Fast, reliable junk removal in Ferrum, VA. Reclaim your space without the hassle.</p>
+          <p class="hero__lead">Fast, reliable junk removal, furniture hauling and moving help in Ferrum and across Franklin County, VA. Licensed &amp; insured, with honest, upfront pricing.</p>
           <div class="hero__actions">
             <a href="#book" class="btn btn--lime btn--lg magnetic"><svg><use href="#i-cal"/></svg><span>Book an Appointment</span></a>
             <a href="tel:+15717070586" class="btn btn--glass btn--lg magnetic"><svg><use href="#i-phone"/></svg><span>Call (571) 707-0586</span></a>
@@ -148,6 +146,16 @@
       </div>
     </div>
 
+    <!-- TRUST STRIP -->
+    <ul class="trust" aria-label="Why customers call Jay's">
+      <li><svg><use href="#i-check"/></svg>Licensed &amp; insured</li>
+      <li><svg><use href="#i-cal"/></svg>Open 7 days a week</li>
+      <li><svg><use href="#i-home"/></svg>Residential &amp; commercial</li>
+      <li><svg><use href="#i-truck"/></svg>Heavy item removal</li>
+      <li><svg><use href="#i-steps"/></svg>Eco-friendly disposal</li>
+      <li><svg><use href="#i-chat"/></svg>Free quotes</li>
+    </ul>
+
     <!-- SERVICES -->
     <section class="services section" id="services" aria-labelledby="services-title">
       <div class="wrap">
@@ -156,12 +164,12 @@
             <p class="eyebrow"><span class="eyebrow__line"></span>Services</p>
             <h2 class="h2 split" id="services-title">If it's in the way, it can go.</h2>
           </div>
-          <p class="shead__lead">From a single couch to a full property cleanout, tell Jay's what needs to go and request a time that works for you.</p>
+          <p class="shead__lead">From a single couch to a full home or office cleanout, tell Jay's what needs to go and request a time that works for you.</p>
         </div>
 
         <div class="cards">
           <article class="card">
-            <div class="card__img"><img src="assets/images/svc-junk.webp" alt="A pickup truck bed piled high with bags of junk" width="1000" height="663" loading="lazy"></div>
+            <div class="card__img"><img src="assets/images/svc-junk.webp" alt="An outdoor trash bin overflowing with cups, bottles and bags" width="1000" height="700" loading="lazy"></div>
             <div class="card__body">
               <span class="card__n">01</span>
               <h3>Junk Removal</h3>
@@ -170,7 +178,7 @@
             </div>
           </article>
           <article class="card">
-            <div class="card__img"><img src="assets/images/svc-furniture.webp" alt="Workers moving a large piece of furniture out of a bright room" width="1000" height="667" loading="lazy"></div>
+            <div class="card__img"><img src="assets/images/svc-furniture.webp" alt="A green fabric sofa sitting in an empty room" width="1000" height="700" loading="lazy"></div>
             <div class="card__body">
               <span class="card__n">02</span>
               <h3>Furniture Removal</h3>
@@ -179,7 +187,7 @@
             </div>
           </article>
           <article class="card">
-            <div class="card__img"><img src="assets/images/svc-appliance.webp" alt="A large stainless steel refrigerator standing in an empty room" width="1000" height="667" loading="lazy"></div>
+            <div class="card__img"><img src="assets/images/svc-appliance.webp" alt="A white front-loading washing machine in a laundry room" width="1000" height="700" loading="lazy"></div>
             <div class="card__body">
               <span class="card__n">03</span>
               <h3>Appliance Removal</h3>
@@ -188,7 +196,7 @@
             </div>
           </article>
           <article class="card">
-            <div class="card__img"><img src="assets/images/svc-mattress.webp" alt="An old worn mattress left on a wooden floor" width="1000" height="667" loading="lazy"></div>
+            <div class="card__img"><img src="assets/images/svc-mattress.webp" alt="A bedroom with a full-size mattress and bed frame" width="1000" height="700" loading="lazy"></div>
             <div class="card__body">
               <span class="card__n">04</span>
               <h3>Mattress Removal</h3>
@@ -197,7 +205,7 @@
             </div>
           </article>
           <article class="card">
-            <div class="card__img"><img src="assets/images/svc-garage.webp" alt="A crowded garage packed with tools, boxes and equipment" width="1000" height="667" loading="lazy"></div>
+            <div class="card__img"><img src="assets/images/svc-garage.webp" alt="A crowded workshop wall packed with tools and equipment" width="1000" height="700" loading="lazy"></div>
             <div class="card__body">
               <span class="card__n">05</span>
               <h3>Garage Cleanouts</h3>
@@ -206,7 +214,7 @@
             </div>
           </article>
           <article class="card">
-            <div class="card__img"><img src="assets/images/svc-yard.webp" alt="A pile of cut branches, leaves and green yard waste" width="1000" height="666" loading="lazy"></div>
+            <div class="card__img"><img src="assets/images/svc-yard.webp" alt="Paper yard waste bags full of leaves lined up at the curb" width="1000" height="700" loading="lazy"></div>
             <div class="card__body">
               <span class="card__n">06</span>
               <h3>Yard Waste Removal</h3>
@@ -215,7 +223,7 @@
             </div>
           </article>
           <article class="card">
-            <div class="card__img"><img src="assets/images/svc-debris.webp" alt="A container filled with scrap wood and construction debris" width="1000" height="667" loading="lazy"></div>
+            <div class="card__img"><img src="assets/images/svc-debris.webp" alt="Construction workers standing on a large building site" width="1000" height="700" loading="lazy"></div>
             <div class="card__body">
               <span class="card__n">07</span>
               <h3>Construction Debris</h3>
@@ -224,12 +232,21 @@
             </div>
           </article>
           <article class="card">
-            <div class="card__img"><img src="assets/images/svc-property.webp" alt="A room crowded with stacked boxes, bags and belongings" width="1000" height="750" loading="lazy"></div>
+            <div class="card__img"><img src="assets/images/svc-property.webp" alt="A big pile of flattened cardboard boxes and packaging" width="1000" height="700" loading="lazy"></div>
             <div class="card__body">
               <span class="card__n">08</span>
               <h3>Property Cleanouts</h3>
               <p>Homes, rentals, basements and attics cleared out room by room.</p>
               <a href="#book" class="card__link" data-service="Property Cleanout">Book this <svg><use href="#i-arrow-ne"/></svg></a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__img"><img src="assets/images/svc-moving.webp" alt="A small dog peeking out of a cardboard moving box" width="1000" height="700" loading="lazy"></div>
+            <div class="card__body">
+              <span class="card__n">09</span>
+              <h3>Moving Help</h3>
+              <p>Furniture, boxes and household items hauled and transported for local moves.</p>
+              <a href="#book" class="card__link" data-service="Moving Help">Book this <svg><use href="#i-arrow-ne"/></svg></a>
             </div>
           </article>
         </div>
@@ -238,7 +255,7 @@
 
     <!-- LOAD BUILDER -->
     <section class="load section" id="load" aria-labelledby="load-title">
-      <div class="load__bg" aria-hidden="true"><img src="assets/images/load-storage.webp" alt="" width="1600" height="1154" loading="lazy"></div>
+      <div class="load__bg" aria-hidden="true"><img src="assets/images/load-storage.webp" alt="" width="1600" height="1100" loading="lazy"></div>
       <div class="wrap load__grid">
         <div class="load__copy">
           <p class="eyebrow"><span class="eyebrow__line"></span>What's going?</p>
@@ -282,18 +299,18 @@
     <section class="why section" id="why" aria-labelledby="why-title">
       <div class="wrap why__grid">
         <div class="why__media">
-          <figure class="why__img"><img src="assets/images/why-hauling.webp" alt="A man dragging a heavy rug across a living room floor during a cleanout" width="1200" height="872" loading="lazy"></figure>
-          <div class="why__badge" aria-hidden="true"><span>Local to</span><b>Ferrum, VA</b></div>
+          <figure class="why__img"><img src="assets/images/why-hauling.webp" alt="A tan pickup truck parked on a dirt lot, ready to haul" width="1200" height="900" loading="lazy"></figure>
+          <div class="why__badge" aria-hidden="true"><span>Licensed &amp;</span><b>Insured</b></div>
         </div>
         <div class="why__copy">
           <p class="eyebrow"><span class="eyebrow__line"></span>Why choose Jay's</p>
           <h2 class="h2 split" id="why-title">Less hassle. More space.</h2>
           <ul class="reasons">
-            <li class="reason"><span class="reason__ico"><svg><use href="#i-cal"/></svg></span><div><h3>Convenient appointment requests</h3><p>Request a time online in a couple of minutes, or call when it's easier for you.</p></div></li>
-            <li class="reason"><span class="reason__ico"><svg><use href="#i-steps"/></svg></span><div><h3>A simple, straightforward process</h3><p>Tell Jay's what needs to go, pick a preferred time, and you're on your way.</p></div></li>
-            <li class="reason"><span class="reason__ico"><svg><use href="#i-home"/></svg></span><div><h3>Residential &amp; property cleanouts</h3><p>From a single item to an entire home, garage or rental property.</p></div></li>
+            <li class="reason"><span class="reason__ico"><svg><use href="#i-cal"/></svg></span><div><h3>Open 7 days a week</h3><p>Weekdays or weekends, request a time online in a couple of minutes or call when it's easier for you.</p></div></li>
+            <li class="reason"><span class="reason__ico"><svg><use href="#i-steps"/></svg></span><div><h3>Straight talk, fair rates</h3><p>Honest pricing, explained before any work starts. Quotes are free.</p></div></li>
+            <li class="reason"><span class="reason__ico"><svg><use href="#i-home"/></svg></span><div><h3>Careful handling, every time</h3><p>Your furniture and belongings get the same care Jay's would give his own, at homes and businesses alike.</p></div></li>
             <li class="reason"><span class="reason__ico"><svg><use href="#i-chat"/></svg></span><div><h3>Easy communication</h3><p>One local number to call with questions: <a href="tel:+15717070586">(571) 707-0586</a>.</p></div></li>
-            <li class="reason"><span class="reason__ico"><svg><use href="#i-pin"/></svg></span><div><h3>Local service in Ferrum, Virginia</h3><p>A local business working for neighbors right here in Ferrum.</p></div></li>
+            <li class="reason"><span class="reason__ico"><svg><use href="#i-pin"/></svg></span><div><h3>Local to Franklin County</h3><p>Based in Ferrum and licensed &amp; insured, serving neighbors across Franklin County and roughly a 50-mile radius.</p></div></li>
           </ul>
         </div>
       </div>
@@ -325,7 +342,7 @@
           </article>
         </div>
         <figure class="how__band" aria-hidden="true">
-          <img src="assets/images/step-empty.webp" alt="" width="1100" height="733" loading="lazy">
+          <img src="assets/images/step-empty.webp" alt="" width="1400" height="800" loading="lazy">
           <figcaption><span>The goal:</span> space you can actually use again.</figcaption>
         </figure>
       </div>
@@ -343,8 +360,8 @@
             <p><b>This is a request, not a confirmed booking.</b> Your appointment isn't confirmed until Jay's Junk Removal contacts you to confirm the date, time and details.</p>
           </div>
           <ul class="book__points">
-            <li><svg><use href="#i-check"/></svg>No account needed</li>
-            <li><svg><use href="#i-check"/></svg>Takes about two minutes</li>
+            <li><svg><use href="#i-check"/></svg>Free quotes, no account needed</li>
+            <li><svg><use href="#i-check"/></svg>Open 7 days a week, weekends included</li>
             <li><svg><use href="#i-check"/></svg>Prefer to talk? <a href="tel:+15717070586">(571) 707-0586</a></li>
           </ul>
         </div>
@@ -371,6 +388,7 @@
                   <option>Yard Waste Removal</option>
                   <option>Construction Debris Removal</option>
                   <option>Property Cleanout</option>
+                  <option>Moving Help</option>
                   <option>Other / Not Sure</option>
                 </select>
                 <label for="f-service">Service needed <em>*</em></label><span class="field__err" id="f-service-err"></span>
@@ -411,12 +429,12 @@
 
     <!-- SERVICE AREA -->
     <section class="area section" id="area" aria-labelledby="area-title">
-      <div class="area__bg" aria-hidden="true"><img src="assets/images/area-ridge.webp" alt="" width="2000" height="1333" loading="lazy"></div>
+      <div class="area__bg" aria-hidden="true"><img src="assets/images/area-ridge.webp" alt="" width="2000" height="1300" loading="lazy"></div>
       <div class="wrap area__grid">
         <div class="area__copy">
           <p class="eyebrow"><span class="eyebrow__line"></span>Service area</p>
-          <h2 class="area__title" id="area-title"><span class="area__l">Proudly serving</span><span class="area__l area__l--big">Ferrum,</span><span class="area__l area__l--big area__l--lime">Virginia</span></h2>
-          <p class="area__text">Jay's Junk Removal is based in Ferrum, VA. Not sure if your address is covered? Call or send a request and Jay's will confirm service availability for your location.</p>
+          <h2 class="area__title" id="area-title"><span class="area__l">Proudly serving</span><span class="area__l area__l--big">Franklin</span><span class="area__l area__l--big area__l--lime">County, VA</span></h2>
+          <p class="area__text">Jay's Junk Removal is based in Ferrum, VA 24088 and serves Ferrum, Franklin County and the surrounding communities within about 50 miles. Not sure if your address is covered? Call or send a request and Jay's will confirm.</p>
           <div class="area__actions">
             <a href="tel:+15717070586" class="btn btn--lime magnetic"><svg><use href="#i-phone"/></svg><span>Call (571) 707-0586</span></a>
             <a href="#book" class="btn btn--line magnetic"><span>Request an appointment</span><svg><use href="#i-arrow"/></svg></a>
@@ -426,7 +444,7 @@
           <span class="radar__ring"></span><span class="radar__ring"></span><span class="radar__ring"></span>
           <span class="radar__sweep"></span>
           <span class="radar__pin"><svg><use href="#i-pin"/></svg></span>
-          <span class="radar__label">Ferrum, VA</span>
+          <span class="radar__label">Ferrum, VA · 50-mile radius</span>
           <span class="radar__coords">36.92° N · 80.01° W</span>
         </div>
       </div>
@@ -459,7 +477,23 @@
           </div>
           <div class="acc__item">
             <h3><button class="acc__btn" aria-expanded="false" aria-controls="faq-5" id="faq-5-btn">How do I find out whether you serve my address?<span class="acc__ico"><svg><use href="#i-plus"/></svg></span></button></h3>
-            <div class="acc__panel" id="faq-5" role="region" aria-labelledby="faq-5-btn"><p>Jay's Junk Removal serves Ferrum, Virginia. To confirm availability for your specific address, call <a href="tel:+15717070586">(571) 707-0586</a> or include your address in an appointment request.</p></div>
+            <div class="acc__panel" id="faq-5" role="region" aria-labelledby="faq-5-btn"><p>Jay's Junk Removal serves Ferrum and Franklin County, Virginia, and surrounding communities within about 50 miles. To confirm availability for your specific address, call <a href="tel:+15717070586">(571) 707-0586</a> or include your address in an appointment request.</p></div>
+          </div>
+          <div class="acc__item">
+            <h3><button class="acc__btn" aria-expanded="false" aria-controls="faq-6" id="faq-6-btn">Are you available on weekends?<span class="acc__ico"><svg><use href="#i-plus"/></svg></span></button></h3>
+            <div class="acc__panel" id="faq-6" role="region" aria-labelledby="faq-6-btn"><p>Yes. Jay's Junk Removal is open seven days a week, so Saturdays and Sundays work too. Pick your preferred day in the request form or call to set it up.</p></div>
+          </div>
+          <div class="acc__item">
+            <h3><button class="acc__btn" aria-expanded="false" aria-controls="faq-7" id="faq-7-btn">Do you take jobs for businesses too?<span class="acc__ico"><svg><use href="#i-plus"/></svg></span></button></h3>
+            <div class="acc__panel" id="faq-7" role="region" aria-labelledby="faq-7-btn"><p>Yes. Jay's handles residential and commercial jobs, from a single couch to an entire office cleanout. Describe what needs to go and Jay's will talk it through with you.</p></div>
+          </div>
+          <div class="acc__item">
+            <h3><button class="acc__btn" aria-expanded="false" aria-controls="faq-8" id="faq-8-btn">Do you help with moves?<span class="acc__ico"><svg><use href="#i-plus"/></svg></span></button></h3>
+            <div class="acc__panel" id="faq-8" role="region" aria-labelledby="faq-8-btn"><p>Yes. Moving help covers hauling and transporting furniture, boxes and other household items for local moves around Ferrum. Choose "Moving Help" in the form and share the details.</p></div>
+          </div>
+          <div class="acc__item">
+            <h3><button class="acc__btn" aria-expanded="false" aria-controls="faq-9" id="faq-9-btn">How much does junk removal cost?<span class="acc__ico"><svg><use href="#i-plus"/></svg></span></button></h3>
+            <div class="acc__panel" id="faq-9" role="region" aria-labelledby="faq-9-btn"><p>Pricing depends on the service and how much needs to go. Quotes are free, and Jay's explains the price before any work starts. Call <a href="tel:+15717070586">(571) 707-0586</a> or send a request to get yours.</p></div>
           </div>
         </div>
       </div>
@@ -467,7 +501,7 @@
 
     <!-- FINAL CTA -->
     <section class="final" aria-labelledby="final-title">
-      <div class="final__media" aria-hidden="true"><img src="assets/images/cta-garage.webp" alt="" width="2000" height="1398" loading="lazy"></div>
+      <div class="final__media" aria-hidden="true"><img src="assets/images/cta-garage.webp" alt="" width="2000" height="1300" loading="lazy"></div>
       <div class="final__inner wrap">
         <h2 class="final__title" id="final-title"><span class="fl"><span>Ready to get</span></span><span class="fl"><span>your space</span></span><span class="fl"><span class="lime">back?</span></span></h2>
         <div class="final__actions">
@@ -484,8 +518,11 @@
       <div class="foot__top">
         <div class="foot__brand">
           <a href="#home" class="brand"><span class="brand__mark">J</span><span class="brand__text">Jay's<b>Junk Removal</b></span></a>
-          <p class="foot__loc"><svg><use href="#i-pin"/></svg>Ferrum, Virginia</p>
+          <p class="foot__loc"><svg><use href="#i-pin"/></svg>Ferrum, VA 24088 · Serving Franklin County</p>
+          <p class="foot__loc"><svg><use href="#i-cal"/></svg>Open 7 days a week</p>
+          <p class="foot__loc"><svg><use href="#i-check"/></svg>Licensed &amp; insured</p>
           <a href="tel:+15717070586" class="foot__phone">(571) 707-0586</a>
+          <a href="https://search.google.com/local/writereview?placeid=ChIJF_FP6_bc-6MRYEzBU37DLyg" class="foot__review" target="_blank" rel="noopener">Leave a Google review <svg><use href="#i-arrow-ne"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
         </div>
         <nav class="foot__nav" aria-label="Footer services">
           <p class="foot__h">Services</p>
@@ -497,6 +534,7 @@
           <a href="#services">Yard Waste Removal</a>
           <a href="#services">Construction Debris</a>
           <a href="#services">Property Cleanouts</a>
+          <a href="#services">Moving Help</a>
         </nav>
         <nav class="foot__nav" aria-label="Footer site">
           <p class="foot__h">Explore</p>
@@ -515,6 +553,7 @@
       <p class="foot__word" aria-hidden="true">Jay's Junk Removal</p>
       <div class="foot__bottom">
         <p>&copy; <span class="year">2026</span> Jay's Junk Removal · Ferrum, Virginia</p>
+        <button type="button" class="motion-toggle"><svg><use href="#i-steps"/></svg><span>Turn animations off</span></button>
         <p>Website designed by <a href="https://martinezmarketing.website/" target="_blank" rel="noopener">Martinez Marketing</a></p>
       </div>
     </div>
@@ -522,7 +561,6 @@
 
   <script src="assets/vendor/gsap.min.js" defer></script>
   <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
-  <script src="assets/vendor/lenis.min.js" defer></script>
   <script src="script.js" defer></script>
 </body>
 </html>
