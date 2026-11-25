@@ -1,5 +1,5 @@
 /* =========================================================
-   Jay's Junk Removal: interactions & animation
+   Junk Removal: interactions & animation
    ========================================================= */
 (function () {
   'use strict';
@@ -241,7 +241,7 @@
       ['input', 'change'].forEach(function (ev) { el.addEventListener(ev, function () { if (fld.classList.contains('is-invalid')) check(id); }); });
     });
     function showError(msg) {
-      errBox.innerHTML = msg + ' You can also call <a href="tel:+15717070586">(571) 707-0586</a>.';
+      errBox.textContent = msg;
       errBox.hidden = false;
       if (hasGSAP && !reduced) gsap.fromTo(errBox, { y: 10, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 0.4 });
     }
